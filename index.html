@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Nav area -->
+    <nav>
+        <div class="container flexed">
+            <h1>DojoWeather</h1>
+            <div class="menu">
+                <ul class="flexed">
+                    <a href="" onclick="alert('Loading Weather Report')">Burbank</a>
+                    <a href="" onclick="alert('Loading Weather Report')">Chicago</a>
+                    <a href="" onclick="alert('Loading Weather Report')">Dallas</a>
+                    <!-- <li onclick="alert('Loading Weather Report')">Burbank</li>
+                    <li onclick="alert('Loading Weather Report')">Chicago</li>
+                    <li onclick="alert('Loading Weather Report')">Dallas</li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Main Content -->
+        <!-- Midpage Control Panel -->
+        <div class="control container flexed">
+            <!-- Left -->
+            <div id="control-left" class="container flexed">
+                <h2>San Jose</h2>
+            </div>
+            <!-- Right -->
+            <div id="control-right" class="container flexed">
+                <p>show temperature in</p>
+                <select id="unit-choice" onchange="changeUnit(this)">
+                    <option value="celcius">C</option>
+                    <option value="fahrenheit">F</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Forecast Content -->
+        <div class="forecast container flexed">
+            <div class="column">
+                <div class="weekday">
+                    <h2>Today</h2>
+                </div>
+                <img src="./images/some_rain.png" alt="rainy" class="weathericon">
+                <div class="weather">
+                    <p>some rain</p>
+                </div>
+                <div class="temprow flexed">
+                    <div id="hi-1" class="temp-num hi">24</div>
+                    <div id="low-1" class="temp-num low">18</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="weekday">
+                    <h2>Tomorrow</h2>
+                </div>
+                <img src="./images/some_sun.png" alt="sunny" class="weathericon">
+                <div class="weather">
+                    <p>some sun</p>
+                </div>
+                <div class="temprow flexed">
+                    <div id="hi-2" class="temp-num hi">27</div>
+                    <div id="low-2" class="temp-num low">19</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="weekday">
+                    <h2>Friday</h2>
+                </div>
+                <img src="./images/some_clouds.png" alt="cloudy" class="weathericon">
+                <div class="weather">
+                    <p>some clouds</p>
+                </div>
+                <div class="temprow flexed">
+                    <div id="hi-3" class="temp-num hi">21</div>
+                    <div id="low-3" class="temp-num low">16</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="weekday">
+                    <h2>Saturday</h2>
+                </div>
+                <img src="./images/some_sun.png" alt="sunny" class="weathericon">
+                <div class="weather">
+                    <p>some sun</p>
+                </div>
+                <div class="temprow flexed">
+                    <div id="hi-4"class="temp-num hi">26</div>
+                    <div id="low-4" class="temp-num low">21</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies Alert idk at all-->
+        <div id="cky-banner" class="cookies container flexed">
+            <div class="cky-left flexed">
+                <img src="./images/cookie.png" alt="cookie">
+            </div>
+            <div class="cky-mid container flexed">
+                <div id="cky-mid-topline" class="flexed">
+                    <h3>Stop! Have a Cookie</h3>
+                </div>
+                <div id="cky-mid-bottomline" class="flexed">
+                    <p>We use cookies (sadly not the kind you eat) to personalize content and ads, to provide social media features, and analyze our traffic. <a href="#">Read More<a></a></p>
+                </div>
+            </div>
+            <div class="cky-right flexed">
+                <button onclick="dismiss()">I Accept</button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
